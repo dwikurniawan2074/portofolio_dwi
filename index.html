@@ -1,703 +1,979 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/logo-logo/logo_web.png" type="image/png" />
+    <title>Dwi's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/logo-logo/logo_web.png" type="image/png">
-	<title>Dwi's Portfolio</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-	<style>
-        html{
-            scroll-behavior: smooth;
+      .home_banner_area {
+        z-index: 1;
+        background: rgba(76, 175, 80, 0.3);
+        background: url(img/background-web.png) no-repeat top center;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .home_banner_area .banner_inner .banner_content h3:after {
+        background: unset;
+      }
+
+      .auto-type b {
+        color: #8050ed;
+      }
+
+      #skills,
+      #experiences,
+      #home {
+        padding-top: 150px;
+      }
+
+      #edu_org {
+        padding-bottom: unset;
+      }
+
+      #portofolio {
+        padding-top: 100px;
+      }
+
+      .main_title {
+        margin-bottom: 40px;
+      }
+
+      .testi_item {
+        padding: 30px 30px;
+        background-color: white;
+        box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.4);
+      }
+
+      .logo_inka,
+      .logo_bpkp,
+      .logo_gramedia {
+        height: 90px;
+        width: unset;
+        display: block;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .gambar_portofolio {
+        border-radius: 5%;
+        height: 220px;
+      }
+
+      .portfolio_box {
+        padding: 20px 20px;
+        box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.6);
+        border-radius: 5%;
+        background-color: white;
+      }
+
+      .education_column {
+        border-right: 1px solid #000;
+        padding-right: 80px;
+      }
+
+      .organizations_column {
+        padding-left: 45px;
+      }
+
+      @media (max-width: 480px) {
+        .home_banner_area .banner_inner .banner_content {
+          padding: 30px 0px;
+          margin-top: 0px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .education_column {
+          border-right: hidden;
         }
 
-        .home_banner_area {
-            z-index: 1;
-            background: rgba(76, 175, 80, 0.3);
-            background: url(img/background-web.png) no-repeat top center;
-            background-position: center;
-            background-size: cover;
-            
+        .organizations_column {
+          padding-left: 15px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .home_banner_area .banner_inner .banner_content .primary_btn {
+          display: unset;
         }
 
-        .home_banner_area .banner_inner .banner_content h3:after {
-            background: unset;
+        .home_banner_area .banner_inner {
+          padding-top: 100px;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        #home {
+          padding-top: unset;
         }
 
-        .auto-type b{
-            color: #8050ED;
-        }
-		
-
-        #skills, #experiences, #home{
-            padding-top : 150px;
+        #home,
+        #skills,
+        #portofolio {
+          padding-left: 10px;
+          padding-right: 10px;
         }
 
-		#edu_org{
-			padding-bottom: unset;
-		}
-
-		#portofolio {
-			padding-top: 100px;
-		}
-
-        .main_title {
-            margin-bottom: 40px;
+        #experiences {
+          padding-top: 100px;
+          padding-bottom: 100px;
         }
 
-		.testi_item {
-			padding: 30px 30px;
-			background-color: white;
-			box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.4);
-		}
-		
-		.logo_inka, .logo_bpkp, .logo_gramedia {
-			height: 90px;
-			width: unset;
-			display: block;
-			align-items: center;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-		.gambar_portofolio {
-			border-radius: 5%;
-			height: 220px;
-		}
+        .organization_title {
+          padding-top: 30px;
+        }
 
-		.portfolio_box{
-			padding: 20px 20px;
-			box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.6);
-			border-radius: 5%;
-			background-color: white;
-		}
+        .education_column {
+          padding-right: unset;
+          border-right: hidden;
+          width: unset;
+        }
 
-		.education_column {
-			border-right: 1px solid #000; 
-			padding-right: 80px;
-		}
+        .organizations_column {
+          padding-left: 15px;
+        }
 
-		.organizations_column{
-			padding-left: 45px;
-		}
+        .column_width {
+          width: unset;
+        }
 
-		@media (max-width: 480px){
-			.home_banner_area .banner_inner .banner_content {
-				padding: 30px 0px;
-				margin-top: 0px;
-			}
-		}
-		
-		@media screen and (max-width: 700px){
-			.education_column {
-				border-right: hidden; 
-			}
+        .organization_item {
+          justify-content: center;
+          /* padding-left: 0px; */
+        }
 
-			.organizations_column{
-				padding-left: 15px;
-			}
+        .testi_item .testi_text {
+          margin-top: 10px;
+        }
 
-		}
+        .home_banner_area .banner_inner .home_right_img {
+          display: unset;
+          max-width: 100%;
+          height: 400px;
+        }
 
+        .home_banner_area .banner_inner .home_right_img img {
+          max-width: 100%;
+          height: 400px;
+        }
 
-		@media (max-width: 767px){
-			.home_banner_area .banner_inner .banner_content .primary_btn {
-				display: unset;
-			}
+        .right_side {
+          padding-top: 50px;
+          text-align: center;
+        }
 
-			.home_banner_area .banner_inner{
-				padding-top: 100px;
-			}
-		}
+        .ukm_bultang {
+          margin-left: -45px;
+        }
 
-		@media screen and (max-width: 991px){
-			#home{
-				padding-top: unset;
-			}
+        .hire_buttons {
+          justify-content: center;
+        }
 
-			#home, #skills, #portofolio{
-				padding-left: 10px;
-				padding-right: 10px;
-			}
+        .experience_text {
+          width: auto;
+        }
+      }
 
-			#experiences{
-				padding-top: 70px;
-			}
+      @media screen and (max-width: 1200px) {
+        .organizations_column {
+          padding-left: 20px;
+        }
+      }
 
-			.organization_title{
-				padding-top:30px;
-			}
+      .education_title,
+      .organization_title {
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        text-align: center;
+      }
 
-			.education_column {
-				padding-right: unset;
-				border-right: hidden; 
-				width: unset;
-			}
+      .logo_education {
+        height: 75px;
+        width: 75px;
+      }
 
-			.organizations_column{
-				padding-left: 15px;
-			}
+      .logo_education_box {
+        align-items: center;
+        text-align: right;
+        /* width: unset; */
+      }
 
-			.column_width{
-				width: unset;
-			}
+      .education_item,
+      .organization_item {
+        margin-bottom: 50px;
+      }
 
-			.organization_item{
-				justify-content: center;
-				/* padding-left: 0px; */
-			}
+      .col-lg-4 {
+        width: unset;
+      }
 
-			.testi_item .testi_text {
-				margin-top: 10px;
-			}
+      .footer_area {
+        padding: 50px 0;
+      }
 
-			.home_banner_area .banner_inner .home_right_img {
-    			display: unset;
-				max-width: 100%;
-				height: 400px;
-			}
-			
-			.home_banner_area .banner_inner .home_right_img img {
-				max-width: 100%;
-				height: 400px;
-			}
+      .footer_area:before {
+        top: 0px;
+      }
 
-			.right_side{
-				padding-top: 50px;
-				text-align: center;
-			}
+      .social_logo {
+        height: 22;
+        width: 22;
+      }
 
-			.ukm_bultang{
-				margin-left: -45px;
-			}
-
-			.hire_buttons{
-				justify-content: center;
-			}
-
-			.experience_text{
-				width: auto;
-			}
-		}
-
-		
-		@media screen and (max-width: 1200px){
-
-			.organizations_column{
-				padding-left: 20px;
-			}
-		}
-
-		.education_title, .organization_title{
-			font-weight: bold;
-			text-transform: uppercase;
-			margin-bottom: 50px;
-			text-align: center;
-		}
-		.logo_education{
-			height: 75px;
-			width: 75px;
-			
-		}
-
-		.logo_education_box{
-			align-items: center;
-			text-align: right;
-			/* width: unset; */
-		}
-
-		.education_item, .organization_item{
-			margin-bottom: 50px;
-		}
-
-		.col-lg-4{
-			width: unset;
-		}
-
-		.footer_area {
-			padding: 50px 0;
-		}
-
-		.footer_area:before {
-			top: 0px;
-		}
-
-		.social_logo{
-			height: 22;
-			width: 22;
-		}
-
-		.home_banner_area .banner_inner .home_right_img {
-			padding-top: unset;
-		}
-
-	
+      .home_banner_area .banner_inner .home_right_img {
+        padding-top: unset;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!--================ Start Header Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="/"
+              ><img
+                src="img/text_portofolio.png"
+                alt="web_logo"
+                height="35"
+                width="170"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav justify-content-end">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experiences">Experiences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portofolio">Portfolio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--================ End Header Area =================-->
 
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="/"><img src="img/text_portofolio.png" alt="web_logo" height="35" width="170"></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
-							<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-							<li class="nav-item"><a class="nav-link" href="#portofolio">Portfolio</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================ End Header Area =================-->
+    <!--================ Start Home Banner Area =================-->
+    <section id="home" class="home_banner_area">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="banner_content">
+                <h3 class="text-uppercase">Hell0, It's Me</h3>
+                <h1 class="text-uppercase">Dwi Kurniawan</h1>
+                <h5 class="text-uppercase">
+                  I'm <span class="auto-type"><b></b></span>
+                </h5>
+                <p class="h6" style="padding-bottom: 50px">
+                  Hello, my name is Dwi Kurniawan i'm computer science student
+                  from Universitas Lampung and i have few experience on web
+                  development projects, i'm adaptable for working on team-based
+                  project or individual project.
+                </p>
+                <div class="d-flex align-items-center hire_buttons">
+                  <a
+                    class="primary_btn"
+                    href="mailto:dwi.kurniawan2074@students.unila.ac.id"
+                    ><span>Hire Me</span></a
+                  >
+                  <a
+                    class="primary_btn tr-bg"
+                    href="https://drive.google.com/file/d/1-6U5nJ7PgDK3Jd9Eids88glEGy_Ma8mP/view?usp=sharing"
+                    target="_blank"
+                    ><span>Get CV</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 right_side">
+              <div class="home_right_img">
+                <img class="photo_profile" src="img//foto_dwi.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Home Banner Area =================-->
 
-	<!--================ Start Home Banner Area =================-->
-	<section id="home" class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row ">
-					<div class="col-lg-7">
-						<div class="banner_content">
-							<h3 class="text-uppercase">Hell0, It's Me</h3>
-							<h1 class="text-uppercase">Dwi Kurniawan</h1>
-							<h5 class="text-uppercase">I'm <span class="auto-type"><b></b></span> </h5>
-							<p class="h6" style="padding-bottom: 50px;">
-								Hello, my name is Dwi Kurniawan i'm computer science student from Universitas Lampung and i have few experience on web development projects, i'm adaptable for working on team-based project or individual project.
-							</p>
-							<div class="d-flex align-items-center hire_buttons">
-								<a class="primary_btn" href="mailto:dwi.kurniawan2074@students.unila.ac.id"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg" href="https://drive.google.com/file/d/1-6U5nJ7PgDK3Jd9Eids88glEGy_Ma8mP/view?usp=sharing" target="_blank"><span>Get CV</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5 right_side">
-						<div class="home_right_img">
-							<img class="photo_profile" src="img//foto_dwi.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
+    <div id="experiences" class="testimonial_area section_gap_bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="main_title">
+              <h2>Experiences</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="testi_slider owl-carousel">
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    src="img/logo-logo/logo_inka.png"
+                    class="logo_inka"
+                    alt="logo_inka"
+                  />
+                </div>
+                <div class="col-lg-8 experience_text">
+                  <div class="testi_text">
+                    <h4>PT INKA PERSERO</h4>
+                    <p class="h6">Information Technology Development</p>
+                    <p>February 2023 - June 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    src="img/logo-logo/logo_bpkp.png"
+                    alt="logo_bpkp"
+                    class="logo_bpkp"
+                  />
+                </div>
+                <div class="col-lg-8 experience_text">
+                  <div class="testi_text">
+                    <h4>BPKP Provinsi Lampung</h4>
+                    <p class="h6">Informatics Intern</p>
+                    <p>December 2022 - February 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    src="img/logo-logo/logo_gramedia.png"
+                    alt="logo_gramedia"
+                    class="logo_gramedia"
+                  />
+                </div>
+                <div class="col-lg-8 experience_text">
+                  <div class="testi_text">
+                    <h4>PT Gramedia Asri Media</h4>
+                    <p class="h6">Store Operation Associate</p>
+                    <p>July 2019 - July 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    src="img/logo-logo/logo_inka.png"
+                    class="logo_inka"
+                    alt="logo_inka"
+                  />
+                </div>
+                <div class="col-lg-8 experience_text">
+                  <div class="testi_text">
+                    <h4>PT INKA PERSERO</h4>
+                    <p class="h6">Information Technology Development</p>
+                    <p>February 2023 - June 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    src="img/logo-logo/logo_bpkp.png"
+                    alt="logo_bpkp"
+                    class="logo_bpkp"
+                  />
+                </div>
+                <div class="col-lg-8 experience_text">
+                  <div class="testi_text">
+                    <h4>BPKP Provinsi Lampung</h4>
+                    <p class="h6">Informatics Intern</p>
+                    <p>December 2022 - February 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    src="img/logo-logo/logo_gramedia.png"
+                    alt="logo_gramedia"
+                    class="logo_gramedia"
+                  />
+                </div>
+                <div class="col-lg-8 experience_text">
+                  <div class="testi_text">
+                    <h4>PT Gramedia Asri Media</h4>
+                    <p class="h6">Store Operation Associate</p>
+                    <p>July 2019 - July 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<div id="experiences" class="testimonial_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>Experiences</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="testi_slider owl-carousel">
-					<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/logo-logo/logo_inka.png" class="logo_inka" alt="logo_inka">
-        					</div>
-        					<div class="col-lg-8 experience_text">
-        						<div class="testi_text">
-        							<h4>PT INKA PERSERO</h4>
-									<p class="h6">Information Technology Development</p>
-									<p>February 2023 - June 2023</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/logo-logo/logo_bpkp.png" alt="logo_bpkp" class="logo_bpkp">
-        					</div>
-        					<div class="col-lg-8 experience_text">
-        						<div class="testi_text">
-        							<h4>BPKP Provinsi Lampung</h4>
-									<p class="h6">Informatics Intern</p>
-									<p>December 2022 - February 2023</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/logo-logo/logo_gramedia.png" alt="logo_gramedia" class="logo_gramedia">
-        					</div>
-        					<div class="col-lg-8 experience_text">
-        						<div class="testi_text">
-        							<h4>PT Gramedia Asri Media</h4>
-									<p class="h6">Store Operation Associate</p>
-									<p>July 2019 - July 2020</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-					<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/logo-logo/logo_inka.png" class="logo_inka" alt="logo_inka">
-        					</div>
-        					<div class="col-lg-8 experience_text">
-        						<div class="testi_text">
-        							<h4>PT INKA PERSERO</h4>
-									<p class="h6">Information Technology Development</p>
-									<p>February 2023 - June 2023</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/logo-logo/logo_bpkp.png" alt="logo_bpkp" class="logo_bpkp">
-        					</div>
-        					<div class="col-lg-8 experience_text">
-        						<div class="testi_text">
-        							<h4>BPKP Provinsi Lampung</h4>
-									<p class="h6">Informatics Intern</p>
-									<p>December 2022 - February 2023</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/logo-logo/logo_gramedia.png" alt="logo_gramedia" class="logo_gramedia">
-        					</div>
-        					<div class="col-lg-8 experience_text">
-        						<div class="testi_text">
-        							<h4>PT Gramedia Asri Media</h4>
-									<p class="h6">Store Operation Associate</p>
-									<p>July 2019 - July 2020</p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-			</div>
-		</div>
-	</div>
+    <section id="edu_org" class="brand_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 education_column">
+            <h2 class="education_title">Education</h2>
+            <div class="row education_item">
+              <div class="col-lg-4 logo_education_box">
+                <img
+                  class="logo_education"
+                  src="img/logo-logo/logo_unila.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-8 column_width">
+                <h4 class="school_title">Universitas Lampung</h4>
+                <p class="h6">Computer Science</p>
+                <p class="h6">July 2020 - Present</p>
+              </div>
+            </div>
+            <div class="row education_item">
+              <div class="col-lg-4 logo_education_box">
+                <img
+                  class="logo_education"
+                  src="img/logo-logo/logo_smkn2.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-8 column_width">
+                <h4 class="school_title">SMK Negeri 2 Bandar Lampung</h4>
+                <p class="h6">Computer Network & Engineering</p>
+                <p class="h6">July 2015 - June 2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 organizations_column">
+            <h2 class="organization_title">Organizations</h2>
+            <div class="row organization_item">
+              <div class="col-lg-4 logo_education_box">
+                <img
+                  class="logo_education"
+                  src="img/logo-logo/logo_himakom.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-8 column_width">
+                <h4 class="school_title">HIMAKOM</h4>
+                <p class="h6">Member of The Science Division</p>
+                <p class="h6">February 2021 - December 2021</p>
+              </div>
+            </div>
+            <div class="row organization_item ukm_bultang">
+              <div class="col-lg-4 logo_education_box">
+                <img
+                  class="logo_education"
+                  src="img/logo-logo/logo_ukm.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-8 column_width">
+                <h4 class="school_title">UKM Bulu Tangkis Unila</h4>
+                <p class="h6">Member</p>
+                <p class="h6">February 2022 - June 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section id="edu_org" class="brand_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 education_column">
-					<h2 class="education_title">Education</h2>
-					<div class="row education_item">
-						<div class="col-lg-4 logo_education_box">
-							<img class="logo_education" src="img/logo-logo/logo_unila.png" alt="">
-						</div>
-						<div class="col-lg-8 column_width">
-							<h4 class="school_title">Universitas Lampung</h4>
-							<p class="h6">Computer Science</p>
-							<p class="h6">July 2020 - Present</p>
-						</div>
-					</div>
-					<div class="row education_item">
-						<div class="col-lg-4 logo_education_box">
-							<img class="logo_education" src="img/logo-logo/logo_smkn2.png" alt="">
-						</div>
-						<div class="col-lg-8 column_width">
-							<h4 class="school_title">SMK Negeri 2 Bandar Lampung</h4>
-							<p class="h6">Computer Network & Engineering</p>
-							<p class="h6">July 2015 - June 2018</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 organizations_column">
-					<h2 class="organization_title">Organizations</h2>
-					<div class="row organization_item">
-						<div class="col-lg-4 logo_education_box">
-							<img class="logo_education" src="img/logo-logo/logo_himakom.png" alt="">
-						</div>
-						<div class="col-lg-8 column_width">
-							<h4 class="school_title">HIMAKOM</h4>
-							<p class="h6">Member of The Science Division</p>
-							<p class="h6">February 2021 - December 2021</p>
-						</div>
-					</div>
-					<div class="row organization_item ukm_bultang">
-						<div class="col-lg-4 logo_education_box">
-							<img class="logo_education" src="img/logo-logo/logo_ukm.png" alt="">
-						</div>
-						<div class="col-lg-8 column_width">
-							<h4 class="school_title">UKM Bulu Tangkis Unila</h4>
-							<p class="h6">Member</p>
-							<p class="h6">February 2022 - June 2022</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!--================ Start Features Area =================-->
+    <section id="skills" class="features_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="main_title">
+              <h2>Skills</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row feature_inner">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img
+                src="img/logo-logo/logo_html.jpg"
+                alt="logo_html"
+                height="64"
+                width="69"
+              />
+              <h3>HTML</h3>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img
+                src="img/logo-logo/logo_css.svg"
+                alt="logo_css"
+                height="64"
+                width="69"
+              />
+              <h3>CSS</h3>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img
+                src="img/logo-logo/logo_php.png"
+                alt="logo_php"
+                height="64"
+                width="69"
+              />
+              <h3>PHP</h3>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img
+                src="img/logo-logo/logo_git.png"
+                alt="logo_git"
+                height="64"
+                width="69"
+              />
+              <h3>Git</h3>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Experienced</p>
+            </div>
+          </div>
+        </div>
+        <div class="row feature_inner">
+          <div class="col-lg-1 col-md-6" style="margin-left: 50px"></div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img
+                src="img/logo-logo/logo_mysql.png"
+                alt="logo_css"
+                height="64"
+                width="69"
+              />
+              <h3>MySQL</h3>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Beginner</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img
+                src="img/logo-logo/logo_js.png"
+                alt="logo_php"
+                height="64"
+                width="69"
+              />
+              <h3>JavaScript</h3>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Beginner</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img
+                src="img/logo-logo/logo_figma.png"
+                alt="logo_git"
+                height="64"
+                width="69"
+              />
+              <h3>Figma</h3>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Beginner</p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-6"></div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Features Area =================-->
 
+    <!--================Start Portfolio Area =================-->
+    <section class="portfolio_area" id="portofolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title text-left">
+              <h2>
+                PortFolio <br />
+                projects that have been worked on
+              </h2>
+            </div>
+          </div>
+        </div>
 
-	<!--================ Start Features Area =================-->
-	<section id="skills" class="features_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>Skills</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row feature_inner">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/logo-logo/logo_html.jpg" alt="logo_html" height="64" width="69">
-						<h3>HTML</h3>
-                        <svg stroke="currentColor" fill="blue" stroke-width="0" viewBox="0 0 16 16" class="icon-check" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path></svg>
-						<p>Experienced</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/logo-logo/logo_css.svg" alt="logo_css" height="64" width="69">
-						<h3>CSS</h3>
-                        <svg stroke="currentColor" fill="blue" stroke-width="0" viewBox="0 0 16 16" class="icon-check" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path></svg>
-						<p>Experienced</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/logo-logo/logo_php.png" alt="logo_php" height="64" width="69">
-						<h3>PHP</h3>
-                        <svg stroke="currentColor" fill="blue" stroke-width="0" viewBox="0 0 16 16" class="icon-check" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path></svg>
-						<p>Experienced</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/logo-logo/logo_git.png" alt="logo_git" height="64" width="69">
-						<h3>Git</h3>
-                        <svg stroke="currentColor" fill="blue" stroke-width="0" viewBox="0 0 16 16" class="icon-check" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path></svg>
-						<p>Experienced</p>
-					</div>
-				</div>
-			</div>
-            <div class="row feature_inner">
-                <div class="col-lg-1 col-md-6" style="margin-left: 50px;"></div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/logo-logo/logo_mysql.png" alt="logo_css" height="64" width="69">
-						<h3>MySQL</h3>
-                        <svg stroke="currentColor" fill="blue" stroke-width="0" viewBox="0 0 16 16" class="icon-check" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path></svg>
-						<p>Beginner</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/logo-logo/logo_js.png" alt="logo_php" height="64" width="69">
-						<h3>JavaScript</h3>
-                        <svg stroke="currentColor" fill="blue" stroke-width="0" viewBox="0 0 16 16" class="icon-check" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path></svg>
-						<p>Beginner</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/logo-logo/logo_figma.png" alt="logo_git" height="64" width="69">
-						<h3>Figma</h3>
-                        <svg stroke="currentColor" fill="blue" stroke-width="0" viewBox="0 0 16 16" class="icon-check" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path></svg>
-						<p>Beginner</p>
-					</div>
-				</div>
-                <div class="col-lg-1 col-md-6"></div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Features Area =================-->
+        <div class="filters-content">
+          <div class="row portfolio-grid justify-content-center">
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100 gambar_portofolio"
+                    src="img/gambar_portofolio/sikpi.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/gambar_portofolio/sikpi.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4>
+                    <a href="portfolio-details.html"
+                      >Sistem Monitoring KPI Divisi</a
+                    >
+                  </h4>
+                  <p>
+                    A web-based information system that used to measure how
+                    effective a division within a company is in achieving its
+                    business goals
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all popular">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100 gambar_portofolio"
+                    src="img/gambar_portofolio/sipbar.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/gambar_portofolio/sipbar.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">Sipbar</a></h4>
+                  <p>
+                    A web-based information system that provides information
+                    about the inventory and goods demand for the office
+                    employees
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all popular">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100 gambar_portofolio"
+                    src="img/gambar_portofolio/sigweb.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/gambar_portofolio/sigweb.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">sigweb</a></h4>
+                  <p>
+                    A web-based geographic information system that provides
+                    information about the population density of an area
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100 gambar_portofolio"
+                    src="img/gambar_portofolio/sikosan.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/gambar_portofolio/sikosan.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">sikosan</a></h4>
+                  <p>
+                    A web-based information system that provides information
+                    about an available boarding house
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all following">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100 gambar_portofolio"
+                    src="img/gambar_portofolio/zahra_clinic.png"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a
+                    href="img/gambar_portofolio/zahra_clinic.png"
+                    class="img-gal"
+                  >
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="portfolio-details.html">zahra clinic</a></h4>
+                  <p>
+                    A web-based information system that provides beauty
+                    treatment services
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Portfolio Area =================-->
 
-	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area" id="portofolio"> 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title text-left">
-						<h2>PortFolio <br>
-							projects that have been worked on </h2>
-					</div>
-				</div>
-			</div>
-	
-			<div class="filters-content">
-				<div class="row portfolio-grid justify-content-center">
-					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100 gambar_portofolio" src="img/gambar_portofolio/sikpi.png" alt="">
-								<div class="overlay"></div>
-								<a href="img/gambar_portofolio/sikpi.png" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Sistem Monitoring KPI Divisi</a></h4>
-								<p> A web-based information system that used to measure how effective a division 
-									within a company is in achieving its business goals</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all popular">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100 gambar_portofolio" src="img/gambar_portofolio/sipbar.png" alt="">
-								<div class="overlay"></div>
-								<a href="img/gambar_portofolio/sipbar.png" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Sipbar</a></h4>
-								<p>A web-based information system that provides information about the inventory and goods
-									demand for the office employees</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all popular">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100 gambar_portofolio" src="img/gambar_portofolio/sigweb.png" alt="">
-								<div class="overlay"></div>
-								<a href="img/gambar_portofolio/sigweb.png" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">sigweb</a></h4>
-								<p>A web-based geographic information system that provides information about the population density
-									of an area</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100 gambar_portofolio" src="img/gambar_portofolio/sikosan.png" alt="">
-								<div class="overlay"></div>
-								<a href="img/gambar_portofolio/sikosan.png" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">sikosan</a></h4>
-								<p>A web-based information system that provides information about an available boarding house</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all following">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100 gambar_portofolio" src="img/gambar_portofolio/zahra_clinic.png" alt="">
-								<div class="overlay"></div>
-								<a href="img/gambar_portofolio/zahra_clinic.png" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">zahra clinic</a></h4>
-								<p> A web-based information system that provides beauty treatment services	</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Portfolio Area =================-->
+    <!--================Footer Area =================-->
+    <footer class="footer_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="footer_top flex-column">
+              <div class="footer_logo">
+                <h4>Contact Me</h4>
+              </div>
+              <div class="text-center">
+                <a href="https://wa.me/62895392795541" target="_blank"
+                  ><img
+                    src="img/logo-logo/logo_wa.svg"
+                    height="30"
+                    width="30"
+                    style="margin-right: 10px"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/dwi-kurniawan-16b844230"
+                  target="_blank"
+                  ><img
+                    src="img/logo-logo/logo_linkedin.svg"
+                    height="30"
+                    width="30"
+                /></a>
+                <a href="https://github.com/dwikurniawan2074" target="_blank"
+                  ><img
+                    src="img/logo-logo/logo_github.svg"
+                    height="30"
+                    width="30"
+                    style="margin: 10px"
+                /></a>
+                <a href="https://gitlab.com/dwikurniawan2074" target="_blank"
+                  ><img
+                    src="img/logo-logo/logo_gitlab.svg"
+                    height="30"
+                    width="30"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer_bottom justify-content-center">
+          <p class="col-lg-8 col-sm-12 footer-text">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Portfolio Dwi Kurniawan | Universitas Lampung
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
 
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<h4>Contact Me</h4>
-						</div>
-						<div class="text-center">
-							<a href="https://wa.me/62895392795541" target="_blank"><img src="img/logo-logo/logo_wa.svg" height="30" width="30" style="margin-right: 10px;"></a>
-							<a href="https://www.linkedin.com/in/dwi-kurniawan-16b844230" target="_blank"><img src="img/logo-logo/logo_linkedin.svg" height="30" width="30"></a>
-							<a href="https://github.com/dwikurniawan2074" target="_blank"><img src="img/logo-logo/logo_github.svg" height="30" width="30" style="margin:10px;"></a>
-							<a href="https://gitlab.com/dwikurniawan2074" target="_blank"><img src="img/logo-logo/logo_gitlab.svg" height="30" width="30"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Portfolio Dwi Kurniawan | Universitas Lampung
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["<b>Junior Web Developer</b>", "<b>Computer Science Student<b>"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-        })
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "<b>Junior Web Developer</b>",
+          "<b>Computer Science Student<b>",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
     </script>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
 </html>
