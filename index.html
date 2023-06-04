@@ -44,7 +44,10 @@
         padding-bottom: 100px;
       }
 
-      #skills,
+      #skills{
+        padding-top: 150px;
+      }
+
       #experiences {
         padding-top: 100px;
       }
@@ -97,6 +100,29 @@
 
       .organizations_column {
         padding-left: 45px;
+      }
+
+      .skills_row1{
+        height: 45px;
+        width: 45px;
+      }
+
+      .feature_item h4 {
+          font-size: 20px;
+          text-transform: unset;
+      }
+
+      .feature_item .codeigniter_text {
+          font-size: 15px;
+          text-transform: unset;
+      }
+
+      .feature_item p {
+        font-size: 12px;
+      }
+
+      .second_row_skills{
+        padding-top: 30px;
       }
 
       @media (max-width: 480px) {
@@ -196,6 +222,10 @@
 
         .experience_text {
           width: auto;
+        }
+
+        .first_skill{
+          display: none;
         }
       }
 
@@ -557,15 +587,14 @@
           </div>
         </div>
         <div class="row feature_inner">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-6">
             <div class="feature_item">
               <img
-                src="img/logo-logo/logo_html.jpg"
+                class="skills_row1"
+                src="img/logo-logo/logo_html.png"
                 alt="logo_html"
-                height="64"
-                width="69"
               />
-              <h3>HTML</h3>
+              <h4>HTML</h4>
               <svg
                 stroke="currentColor"
                 fill="blue"
@@ -578,20 +607,45 @@
               >
                 <path
                   d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
-                ></path>
-              </svg>
+                  ></path>
+                </svg>
               <p>Experienced</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-6">
             <div class="feature_item">
               <img
+                class="skills_row1"
                 src="img/logo-logo/logo_css.svg"
                 alt="logo_css"
-                height="64"
-                width="69"
+                />
+                <h4>CSS</h4>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <path
+                d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="feature_item">
+              <img
+                class="skills_row1"
+                src="img/logo-logo/logo_bootstrap.png"
+                alt="logo_bootstrap"
+                width="50"
               />
-              <h3>CSS</h3>
+              <h4>Bootstrap</h4>
               <svg
                 stroke="currentColor"
                 fill="blue"
@@ -609,15 +663,14 @@
               <p>Experienced</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-6">
             <div class="feature_item">
               <img
+                class="skills_row1"
                 src="img/logo-logo/logo_php.png"
                 alt="logo_php"
-                height="64"
-                width="69"
               />
-              <h3>PHP</h3>
+              <h4>PHP</h4>
               <svg
                 stroke="currentColor"
                 fill="blue"
@@ -635,15 +688,39 @@
               <p>Experienced</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-6">
             <div class="feature_item">
               <img
+                class="skills_row1"
                 src="img/logo-logo/logo_git.png"
-                alt="logo_git"
-                height="64"
-                width="69"
+                alt="logo_github"
               />
-              <h3>Git</h3>
+              <h4>Github</h4>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="feature_item">
+              <img
+                class="skills_row1"
+                src="img/logo-logo/logo_codeigniter2.png"
+                alt="logo_git"
+              />
+              <h4 class="codeigniter_text">Codeigniter</h4>
               <svg
                 stroke="currentColor"
                 fill="blue"
@@ -662,17 +739,17 @@
             </div>
           </div>
         </div>
-        <div class="row feature_inner">
-          <div class="col-lg-1 col-md-6" style="margin-left: 50px"></div>
-          <div class="col-lg-3 col-md-6">
+
+        <div class="row feature_inner second_row_skills">
+          <div class="col-lg-1 col-md-6 first_skill"></div>
+          <div class="col-lg-2 col-md-6">
             <div class="feature_item">
               <img
+                class="skills_row1"
                 src="img/logo-logo/logo_mysql.png"
-                alt="logo_css"
-                height="64"
-                width="69"
+                alt="logo_html"
               />
-              <h3>MySQL</h3>
+              <h4>MySQL</h4>
               <svg
                 stroke="currentColor"
                 fill="blue"
@@ -690,15 +767,14 @@
               <p>Beginner</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-6">
             <div class="feature_item">
               <img
+                class="skills_row1"
                 src="img/logo-logo/logo_js.png"
-                alt="logo_php"
-                height="64"
-                width="69"
+                alt="logo_css"
               />
-              <h3>JavaScript</h3>
+              <h4>JavaScript</h4>
               <svg
                 stroke="currentColor"
                 fill="blue"
@@ -716,15 +792,14 @@
               <p>Beginner</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-6">
             <div class="feature_item">
               <img
+                class="skills_row1"
                 src="img/logo-logo/logo_figma.png"
-                alt="logo_git"
-                height="64"
-                width="69"
+                alt="logo_php"
               />
-              <h3>Figma</h3>
+              <h4>Figma</h4>
               <svg
                 stroke="currentColor"
                 fill="blue"
@@ -742,7 +817,57 @@
               <p>Beginner</p>
             </div>
           </div>
-          <div class="col-lg-1 col-md-6"></div>
+          <div class="col-lg-2 col-md-6">
+            <div class="feature_item">
+              <img
+                class="skills_row1"
+                src="img/logo-logo/logo_laravel.png"
+                alt="logo_laravel"
+              />
+              <h4>Laravel</h4>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Beginner</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="feature_item">
+              <img
+                class="skills_row1"
+                src="img/logo-logo/logo_gitlab.png"
+                alt="logo_gitlab"
+              />
+              <h4>Gitlab</h4>
+              <svg
+                stroke="currentColor"
+                fill="blue"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="icon-check"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                ></path>
+              </svg>
+              <p>Beginner</p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-6 last_skill"></div>
         </div>
       </div>
     </section>
